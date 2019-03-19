@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+div.profile.col-sm-3 {
+    background: #003366;
+    color: white;
+    text-align: center;
+}
+
+div.panel.widget.light-widget.panel-bd-top p {
+	border: 1px solid white;
+}
+
+a.block {
+	color: black;
+}
+
+img.blog.image {
+	height: 250px;
+	width: 250px;
+}
+
+img.new.blog.button {
+	text-align: right;
+}
+
+img.img-fluid {
+	border-radius: 50%;
+}
