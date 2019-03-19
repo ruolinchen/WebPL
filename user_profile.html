@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>     
+	
+	<link rel="stylesheet" href="user_profile.css"/>
+	
+	<!-- Pull navbar from navbar.html -->
+	<script> 
+ 	    $(function(){
+  			$("#navbar-loaded").load("navbar.html"); 
+  	    });
+    </script>    
+	
+	<title>User Profile</title>
+</head>
+<body>
+	<!-- Navbar -->
+    <div id = "navbar-loaded"></div>
+    
+    <!-- Bio -->
+	<div class = "container">
+		<div class = "row">
+			<div class = "profile col-sm-3">
+				<div class = "panel widget light-widget panel-bd-top">
+					<div class = "panel-body">
+						<img src ="profile.jpeg" class="img-fluid" alt="Profile Picture" style="padding-top: 20px">
+						<h2>Username</h2>
+						<p> [Biography of the user here]
+						<br>Age: 20
+						<br>Location: UVA
+						<br>Favorite Groups: BTS
+						<br>About me:
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- The user's blog posts -->
+			<div class = "col-sm-9">
+				<div class = "header">
+					<h1>My Blog Posts  
+						<a href="create_blog.html">
+  							<img class="new blog button" src="new_blog.png"style="height: 30px; width:30px">
+  						</a>
+  					</h1>
+				</div>
+  				<div class="list-item">
+  					<article class="blog_post">
+   					 	<a class="block" href="view_blog.html">
+   					 		<div class="col">
+   					 			<div class="row">
+   					 				<img class="blog image" src="bts.jpg" class="image-fluid" style="padding-right:10px">
+   					 				<div class="rows">
+   					 					<section class="desc">
+	   					 					<h3>Blog Post</h3>
+    										<div class="content"> Blog Preview </div>
+    									</section>
+    								</div>
+    							</div>
+    						</div>
+    					</a>
+    				</article>
+    				<hr/>
+    			</div>
+    			<div class="list-item">
+  					<article class="blog_post">
+   					 	<a class="block" href="view_blog.html">
+   					 		<div class="col">
+   					 			<div class="row">
+   					 				<img class="blog image" src="bts.jpg" class="image-fluid" style="padding-right:10px">
+   					 				<div class="rows">
+   					 					<section class="desc">
+	   					 					<h3>Blog Post</h3>
+    										<div class="content"> Blog Preview </div>
+    									</section>
+    								</div>
+    							</div>
+    						</div>
+    					</a>
+    				</article>
+    				<hr/>
+    			</div>
+    			<div class="list-item">
+  					<article class="blog_post">
+   					 	<a class="block" href="view_blog.html">
+   					 		<div class="col">
+   					 			<div class="row">
+   					 				<img class="blog image" src="bts.jpg" class="image-fluid" style="padding-right:10px">
+   					 				<div class="rows">
+   					 					<section class="desc">
+	   					 					<h3>Blog Post</h3>
+    										<div class="content"> Blog Preview </div>
+    									</section>
+    								</div>
+    							</div>
+    						</div>
+    					</a>
+    				</article>
+    				<hr/>
+    			</div>
+    		</div>
+    	</div>
+	</div>
+	
+
+</body>
