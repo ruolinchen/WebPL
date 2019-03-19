@@ -13,7 +13,6 @@ function colorLike(){
 		heart.style.color = 'red';
 		counter.textContent = parseInt(counter.textContent) + 1;
 	}
-	console.log(likeButton.style.color);
 }
 
 function addComment(){
@@ -68,8 +67,6 @@ function addComment(){
 		newMsg.appendChild(newMedia);
 
 		cmtList.appendChild(newMsg);
-
-		console.log(newMsg);
 	}
 }
 
