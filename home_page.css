@@ -3,3 +3,24 @@
     color: white;
     text-align: center;
 }
+
+img.blog.image {
+	height: 250px;
+	width: 250px;
+	object-fit: cover;
+}
+
+a.block {
+	color: black;
+	text-decoration: none;
+}
+
+div.action.pointer {
+	color: #9b9b9b;
+	text-decoration: none;
+}
+
+#comment {
+	color: #9b9b9b;
+	text-decoration: none;
+}
