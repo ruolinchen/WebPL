@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>     
 	
@@ -25,18 +26,37 @@
     <div id = "navbar-loaded"></div>
     
     <!-- Bio -->
-	<div class = "container">
+	<div class = "container" style="padding-top: 50px">
 		<div class = "row">
 			<div class = "profile col-sm-3">
 				<div class = "panel widget light-widget panel-bd-top">
 					<div class = "panel-body">
 						<img src ="profile.jpeg" class="img-fluid" alt="Profile Picture" style="padding-top: 20px">
-						<h2>Username</h2>
-						<p> [Biography of the user here]
-						<br>Age: 20
-						<br>Location: UVA
-						<br>Favorite Groups: BTS
-						<br>About me:
+						<h2 style="padding-bottom: 15px">Username <i class="fas fa-user-edit" id="edit"></i></h2>
+
+			<!-- Editing Profile Information (in the works) -->
+						<!-- The Modal -->
+						<div id="form" class="modal">
+
+  							<!-- Modal content -->
+  							<div class="modal-content">
+   								<span class="close">&times;</span>
+    							<input id="name" name="name" placeholder="Name" type="text">
+								<input id="age" name="age" placeholder="Age" type="number">
+								<input id="location" name="location" placeholder="Location" type="text">
+								<input id="groups" name="groups" placeholder="SNSD, BTS, Twice, etc." type="text">
+								<textarea id="bio" name="biography" placeholder="About Me"></textarea>
+ 							</div>
+						</div>
+						
+						<p> Welcome to the user profile page. Here, the user can edit information about themselves.
+						<br>[Biography of the user here]
+						<br><b>Name: </b>Username
+						<br><b>Age: </b>20
+						<br><b>Location: </b>UVA
+						<br><b>Favorite Groups: </b>BTS
+						<br><b>About me: </b>Hi my name is Username!! I just joined this site about an hour agao
+						so I'm competely new here. I look forward to getting to know you guys!
 						</p>
 					</div>
 				</div>
@@ -47,7 +67,7 @@
 				<div class = "header">
 					<h1>My Blog Posts  
 						<a href="create_blog.html">
-  							<img class="new blog button" src="new_blog.png"style="height: 30px; width:30px">
+							<i class="fas fa-plus-circle"></i>
   						</a>
   					</h1>
 				</div>
@@ -59,7 +79,13 @@
    					 				<img class="blog image" src="bts.jpg" class="image-fluid" style="padding-right:10px">
    					 				<div class="rows">
    					 					<section class="desc">
-	   					 					<h3>Blog Post</h3>
+	   					 					<h3>Example Post</h3>
+	   					 			   		<div class="action pointer">
+    											<i class="far fa-heart"></i>
+    											<span class="num">1000</span> Likes
+    											<i class="far fa-comment-dots" style="padding-left:10px"></i>	
+    											<span class="num">3</span> Comments
+    										</div>
     										<div class="content"> Blog Preview </div>
     									</section>
     								</div>
@@ -77,7 +103,13 @@
    					 				<img class="blog image" src="bts.jpg" class="image-fluid" style="padding-right:10px">
    					 				<div class="rows">
    					 					<section class="desc">
-	   					 					<h3>Blog Post</h3>
+	   					 					<h3>Another Blog Post</h3>
+	   					 					<div class="action pointer">
+    											<i class="far fa-heart"></i>
+    											<span class="num">1000</span> Likes
+    											<i class="far fa-comment-dots" style="padding-left:10px"></i>	
+    											<span class="num">3</span> Comments
+    										</div>
     										<div class="content"> Blog Preview </div>
     									</section>
     								</div>
@@ -95,7 +127,13 @@
    					 				<img class="blog image" src="bts.jpg" class="image-fluid" style="padding-right:10px">
    					 				<div class="rows">
    					 					<section class="desc">
-	   					 					<h3>Blog Post</h3>
+	   					 					<h3>Title of Blog Post</h3>
+	   					 					<div class="action pointer">
+    											<i class="far fa-heart"></i>
+    											<span class="num">1000</span> Likes
+    											<i class="far fa-comment-dots" style="padding-left:10px"></i>	
+    											<span class="num">3</span> Comments
+    										</div>
     										<div class="content"> Blog Preview </div>
     									</section>
     								</div>
@@ -109,5 +147,6 @@
     	</div>
 	</div>
 	
+<script src="edit_user.js"></script>
 
 </body>
