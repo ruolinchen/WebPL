@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>     
 
@@ -15,12 +15,157 @@
   		});
 	</script> 
 
+	<link rel="stylesheet" type="text/css" href="view_blog.css"/>
+
 	<title>View Blog</title>
 </head>
 
 <body>
 	<!-- Navbar -->
 	<div id="navbar-loaded"></div>
+
+	<!-- Blog Content -->
+	<div class="container">
+		
+		<!-- Page content -->
+
+		<!-- Title Content -->
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<!-- Title -->
+				<h1 class="mt-4">Example Post</h1>
+				<!-- Author -->
+			</div>
+		</div>
+
+		<!-- Author & like content -->
+		<div class="row" id="break">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="float-left">
+					<a href="#">
+						<img src="https://bootdey.com/img/Content/user_1.jpg" class="user-image" style="	vertical-align: text-bottom;">
+					</a>
+						By <a href="#">username123456789</a>
+				</div>
+				<div class="float-right" align=bottom>&hearts; 1000 likes</div><br>
+			</div>
+
+		</div>
+
+		<!-- BLog content -->
+		<div class="row" id="content">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<p>Right here is an example of what a person's blog would look like.</p>
+
+				<p class="text-center">You can have centered text.</p>
+
+				<p class="font-weight-bold">You can have bolded text.</p>
+
+				<p class="font-italic">You can have indented text.</p>
+
+				<p class="text-center font-weight-bold font-italic">Or you can have a combination of all 3.</p>
+
+				<p>There can be <a href="#">links</a> to other sites.</p>
+
+				<div class="card">
+					<img class="card-img-top" src="https://lh3.googleusercontent.com/LqpGCgRGvsz8bHfHYJ6PTsRCdfEhkrluvv47noXrVrqks4qKIC5Rz2lNIHE0sO4DU1Vtd8G5qHJlBKoXV5S1PAsjThJmTzk84A=w1600-rj" alt="Card image cap">
+					<div class="card-body">
+						<p class="card-text">You can include images</p>
+					</div>
+				</div>
+
+				<br>
+
+				<p> You can also link youtube videos: </p>
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/pBuZEGYXA6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+
+				<br>
+
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Comment box
+
+	Most html code sourced from: https://www.bootdey.com/snippets/view/Simple-Comment-panel#html
+	-->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="card card-info">
+					<div class="card-header">
+						Comments
+					</div>
+					<!-- Create a comment -->
+					<div class="card-body">
+						<textarea class="form-control" placeholder="Write a comment here!" rows="3"></textarea>
+						<br>
+						<div class="text-right">
+							<button class="btn btn-primary" type="button">Post</button>
+						</div>
+					</div>
+					<!-- Other user's comments -->
+					<ul class="list-group list-group-flush">
+
+						<li class="list-group-item">
+							<div class="media">
+								<a href="#">
+									<img class="align-self-start user-image mr-1" src="https://bootdey.com/img/Content/user_2.jpg">
+								</a>
+								<div class="media-body">
+									<a href="#">
+										<h5 class="mt-0">Username987654321</h5>
+									</a>
+									<small class="font-italic">Posted 30 minutes ago</small>
+
+									<p> This is an example of a comment one may see on a blog post. </p>
+
+								</div>
+							</div>
+						</li>
+
+						<li class="list-group-item">
+							<div class="media">
+								<a href="#">
+									<img class="align-self-start user-image mr-1" src="https://bootdey.com/img/Content/user_3.jpg">
+								</a>
+								<div class="media-body">
+									<div class="comment-header">
+										<a href="#">
+											<h5>Username2468</h5>
+										</a>
+										<small class="font-italic">Posted 30 minutes ago </small>
+									</div>
+
+									<p> Users can comment on another user's post </p>
+
+									<div class="media mt-3">
+										<a class="pr-3" href="#">
+											<img class ="user-image" src="https://bootdey.com/img/Content/user_1.jpg">
+										</a>
+										<div class="media-body">
+											<a href="#">
+											<h5 class="mt-0">Username123456789
+											</h5>
+											</a>
+											<small class="font-italic"> Posted 25 minutes ago </small>
+											<p>Users can also reply to comments.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
 </body>
 
 </html>
