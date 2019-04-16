@@ -1,3 +1,5 @@
+//Author: Sandy Gould (sjg5rv)
+
 var likeButton = document.getElementById("heart-like-button");
 var commentButton = document.getElementById("comment-button");
 

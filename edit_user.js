@@ -1,3 +1,5 @@
+// Author: Ruolin Chen (rlc8my)
+
 var modal = document.getElementById("form");
 var editButton = document.getElementById("edit");
 var span = document.getElementsByClassName("close")[0]

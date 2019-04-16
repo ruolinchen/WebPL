@@ -1,3 +1,5 @@
+//Author: Sandy Gould (sjg5rv)
+
 var loginForm = document.getElementById("login");
 var username = document.getElementById("username-input");
 var password = document.getElementById("pswd-input")
