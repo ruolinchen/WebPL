@@ -40,18 +40,21 @@
 
   							<!-- Modal content -->
   							<div class="modal-content">
-   								<span class="close">&times;</span>
-    							<input id="name" name="name" placeholder="Name" type="text">
-								<input id="age" name="age" placeholder="Age" type="number">
-								<input id="location" name="location" placeholder="Location" type="text">
-								<input id="groups" name="groups" placeholder="SNSD, BTS, Twice, etc." type="text">
-								<textarea id="bio" name="biography" placeholder="About Me"></textarea>
+   								<span class="close" style="text-align:right">&times;</span>
+								<form action="edit_user.php" method="POST"> 
+								    Name: <input type="text" name="name" placeholder="Name"><br/>
+                                    Age: <input type="text" name="age" placeholder="Age"><br/>
+                                    Location: <input type="text" name="location" placeholder="Location"><br/>
+                                    Favorite Groups: <input type="text" name="groups" placeholder="SNSD, BTS, Twice, etc."><br/>
+                                    About Me: <textarea name="about" rows="5" cols="40" placeholder="About Me"></textarea><br/>
+                                    <input type="submit" value="Submit">
+                                </form>
  							</div>
 						</div>
 						
 						<p> Welcome to the user profile page. Here, the user can edit information about themselves.
 						<br>[Biography of the user here]
-						<br><b>Name: </b>Username
+						<br><b>Name: </b> <?php echo $_POST['name']?>
 						<br><b>Age: </b>20
 						<br><b>Location: </b>UVA
 						<br><b>Favorite Groups: </b>BTS
