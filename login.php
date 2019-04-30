@@ -11,7 +11,7 @@
 
         if (isset($_POST['password'])) {
             $pwd = trim($_POST['password']);
-            $_SESSION['password'] = $user;
+            $_SESSION['username'] = $user;
             $_SESSION['password'] = $pwd;
 
             header('Location: index.html');    
