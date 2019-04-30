@@ -1,21 +1,75 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div class="container">
   <h1>
-    Welcome to {{ title }}!
+    {{ title }}!
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
-<router-outlet></router-outlet>
+Display data received from the back end <br/>
+  response data = {{ responsedata | json}}
+  <br/>
+  <hr/>
+  Data binding exercise 
+  <br/>
+  {{ orderForm.value | json }}
+  <br/>
+  {{ orderModel | json }} 
+  <hr/>
+
+<!--  {{ orderForm.value | json }}
+  <br/>
+  {{ orderModel | json }} 
+--> 
+
+ <form #orderForm="ngForm" [ngClass]="{bordered: true}">
+  <div class="form-group">
+    <label>Username: </label>
+    <input [(ngModel)]="orderModel.username" 
+           required
+           #name="ngModel" 
+           type="text" class="form-control" name="username">
+    <!--<small class="text-danger" [class.d-none]="username.invalid || username.untouched">Username is requried</small> [class.is-invalid]="username.invalid && username.touched"-->
+  </div>
+
+  <div class="form-group">
+    <label>Password: </label>
+    <input [(ngModel)]="orderModel.password"
+           type="password" class="form-control" name="password">
+  </div>
+
+  <div class="form-group">
+    <label>Name: </label>
+    <input [(ngModel)]="orderModel.name"
+           class="form-control" name="name">
+  </div>
+
+  <div class="form-group">
+    <label>Age: </label>
+    <input [(ngModel)]="orderModel.age"
+           class="form-control" name="age">
+    <div *ngIf="orderForm.value.age < 12" [style.color]="'red'"> You must be 12 or older to join! </div>
+  </div>
+
+  <div class="form-group">
+    <label>Location: </label>
+    <input [(ngModel)]="orderModel.location"
+          class="form-control" name="location">
+  </div>
+
+  <div class="form-group">
+    <label>Favorite Group: </label>
+    <select [(ngModel)]="orderModel.group" class="custom-select" name="group">
+        <option *ngFor="let group of groups">{{group}} </option>
+      </select>
+  </div>
+
+  <div class="form-group">
+    <label>About me: </label>
+    <input [(ngModel)]="orderModel.about"
+           class="form-control" name="about">
+  </div>
+    
+  <button class="btn btn-primary" (click)="senddata(orderForm.value)">Register</button>
+  <a [routerLink]="['../index.html']"><button class="btn btn-primary">Sign In</button></a>
+  <button class="btn btn-primary" (click)="senddata(orderForm.value)">Go Home</button>
+</form>  
+</div>

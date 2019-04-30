@@ -107,15 +107,12 @@
 					</div>
 					<!-- Create a comment -->
 					<div class="card-body">
-						<form action="new_comment.php" method="POST">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Write a comment here!" name="comment-content"></textarea>
-							</div>
+						<textarea class="form-control" placeholder="Write a comment here!" rows="3" id="comment-content"></textarea>
+							<br>
 							<div class="text-right">
 								<div id="comment-msg" class="feedback"></div>
-								<button class="btn btn-primary" type="submit" id="comment-button">Post</button>
+								<button class="btn btn-primary" type="button" id="comment-button">Post</button>
 							</div>
-						</form>
 					</div>
 
 					<!-- Previous comments -->
