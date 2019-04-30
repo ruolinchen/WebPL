@@ -1,9 +1,9 @@
 <?php 
 $hostname = 'localhost';
-$dbname = 'id9306054_kpopkommunity';
-$username = 'id9306054_kpopkommunity';
+$dbname = 'kpopkommunity';
+$username = 'ruolinchen';
 $password = 'cs4640sp19';
-$dsn = "mysql:host=$hostname;dbname=id9306054_kpopkommunity";
+$dsn = "mysql:host=$hostname;dbname=kpopkommunity";
 try {
 	$db = new PDO($dsn, $username, $password);
 }

@@ -47,14 +47,23 @@
                                     Location: <input type="text" name="location" placeholder="Location"><br/>
                                     Favorite Groups: <input type="text" name="groups" placeholder="SNSD, BTS, Twice, etc."><br/>
                                     About Me: <textarea name="about" rows="5" cols="40" placeholder="About Me"></textarea><br/>
-                                    <input type="submit" value="Submit">
+                                    <input type="submit" value="Update" name="submit">
                                 </form>
  							</div>
 						</div>
 						
 						<p> Welcome to the user profile page. Here, the user can edit information about themselves.
 						<br>[Biography of the user here]
-						<br><b>Name: </b> <?php echo $_POST['name']?>
+						<br><b>Name: </b> 
+							<?php 
+								session_start();
+								require('connect-db.php');
+								$query = "SELECT name FROM users WHERE username = 'username'";
+								$statement = $db->prepare($query);
+								$statement->execute();
+								$statement->closeCursor();
+								echo $query;
+							?>
 						<br><b>Age: </b>20
 						<br><b>Location: </b>UVA
 						<br><b>Favorite Groups: </b>BTS
