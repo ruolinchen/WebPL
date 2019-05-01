@@ -1,3 +1,5 @@
+// Author: Sandy Gould (sjg5rv) and Ruolin Chen (rlc8my)
+
 import { Component } from '@angular/core';
 import { Order } from './order';
 

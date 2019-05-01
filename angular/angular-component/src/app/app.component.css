@@ -1,4 +1,15 @@
+/* Author: Sandy Gould (sjg5rv) and Ruolin Chen (rlc8my) */
+
 .bordered {
 	border: 1px dashed black;
 	background-color: #eee;
+}
+
+.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
 }

@@ -1,3 +1,5 @@
+// Author: Sandy Gould (sjg5rv) and Ruolin Chen (rlc8my)
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 

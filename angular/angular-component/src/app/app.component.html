@@ -1,3 +1,5 @@
+<!-- Author: Sandy Gould (sjg5rv) and Ruolin Chen (rlc8my)-->
+
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
   <h1>
@@ -67,9 +69,9 @@ Display data received from the back end <br/>
     <input [(ngModel)]="orderModel.about"
            class="form-control" name="about">
   </div>
-    
+
   <button class="btn btn-primary" (click)="senddata(orderForm.value)">Register</button>
-  <a [routerLink]="['../index.html']"><button class="btn btn-primary">Sign In</button></a>
-  <button class="btn btn-primary" (click)="senddata(orderForm.value)">Go Home</button>
+  <a href="http://localhost/WebPL/login.html" [ngClass]="{button: true}">Sign in</a>
+  <a href="http://localhost/WebPL/index.html" [ngClass]="{button: true}">Go home</a>
 </form>  
 </div>

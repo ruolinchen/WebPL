@@ -1,5 +1,5 @@
 <?php
-
+//Author: Sandy Gould (sjg5rv) and Ruolin Chen (rlc8my)
 
 // try commenting out the header setting to experiment how the back end refuses the request
 header('Access-Control-Allow-Origin: http://localhost:4200');

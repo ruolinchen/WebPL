@@ -1,3 +1,5 @@
+// Author: Sandy Gould (sjg5rv) and Ruolin Chen (rlc8my)
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
