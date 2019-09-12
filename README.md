@@ -1,5 +1,6 @@
 # WebPL
 Class project of creating a website for Programming Languages for Web Applications (CS 4640) in Spring 2019.
+
 *Worked with classmate Sandy Gould on project
 
 ## Assignment 3:
